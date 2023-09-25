@@ -1,5 +1,6 @@
 # README
 Rails app for searching in public github repos
+
 Uses ruby 3.2.2 and the rails project is created with --minimal and --skip-activerecord flags
 
 *** setup
