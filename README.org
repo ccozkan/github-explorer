@@ -1,0 +1,20 @@
+# README
+Rails app for searching in public github repos
+Uses ruby 3.2.2 and rails projects is created with --minimal and --skip-activerecord
+
+*** setup
+clone the repo and run
+#+BEGIN_SRC shell
+    bundle
+    rails s
+#+END_SRC
+
+*** run tests
+#+BEGIN_SRC shell
+    bundle exec
+#+END_SRC
+
+*** run linters
+#+BEGIN_SRC shell
+    bundle exec rubocop
+#+END_SRC
