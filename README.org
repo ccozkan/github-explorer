@@ -11,7 +11,7 @@ clone the repo and run
 
 *** run tests
 #+BEGIN_SRC shell
-    bundle exec
+    bundle exec rspec
 #+END_SRC
 
 *** run linters
