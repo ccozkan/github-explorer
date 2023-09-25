@@ -27,8 +27,7 @@ class PublicRepoSearcherService
     data["items"].each do |repo|
       result = { "repo_url": repo["html_url"],
                  "owner": repo["owner"]["login"],
-                 "description": repo["description"],
-               }
+                 "description": repo["description"] }
       results << result
     end
     results
