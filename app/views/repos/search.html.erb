@@ -1,0 +1,17 @@
+<h1> github explorer⛵</h1>
+
+<%= form_tag(root_path, method: :get) do %>
+    <%= text_field_tag(:query, params[:query] ) %>
+<% end %>
+
+<hr>
+
+<% if @query %>
+    <% if @repos.blank? %>
+        "No results were found"
+    <% else %>
+        <% @repos.each do |repo| %>
+            <%= render "repo", item: repo %>
+        <% end %>
+    <% end %>
+<% end %>
