@@ -12,7 +12,7 @@ RSpec.describe PublicRepoSearcherService, type: :service do
       expect(subject.success?).to be true
       expect(subject.payload.class).to be Array
       expect(subject.payload.first.class).to be Hash
-      expect(subject.payload.first.keys).to eq [:repo_url, :owner_url, :description]
+      expect(subject.payload.first.keys).to eq [:repo_url, :username, :description]
     end
   end
 end
